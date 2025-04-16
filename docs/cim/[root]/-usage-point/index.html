@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>UsagePoint</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            cim
+                    </a>
+            </div>
+            <div class="library-version">
+1.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="cim::/UsagePoint///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">cim</a><span class="delimiter">/</span><a href="../index.html">[root]</a><span class="delimiter">/</span><span class="current">UsagePoint</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Usage</span><wbr></wbr><span><span>Point</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">UsagePoint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>nominalServiceVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>outageRegion<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>phaseCode<span class="token operator">: </span><a href="../-phase-code/index.html">PhaseCode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>servicePriority<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>customerAgreement<span class="token operator">: </span><a href="../-customer-agreement/index.html">CustomerAgreement</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>endDevices<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-end-device/index.html">EndDevice</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>equipments<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-equipment/index.html">Equipment</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>usagePointLocation<span class="token operator">: </span><a href="../-usage-point-location/index.html">UsagePointLocation</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>amiBillingReady<span class="token operator">: </span><a href="../-ami-billing-ready-kind/index.html">AmiBillingReadyKind</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkBilling<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>connectionState<span class="token operator">: </span><a href="../-usage-point-connected-kind/index.html">UsagePointConnectedKind</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>estimatedLoad<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>grounded<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isSdp<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isVirtual<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minimalUsageExpected<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedCurrent<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedPower<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-active-power/index.html">ActivePower</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>readCycle<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>readRoute<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serviceDeliveryRemark<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>configurationEvents<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-configuration-event/index.html">ConfigurationEvent</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metrologyRequirements<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-metrology-requirement/index.html">MetrologyRequirement</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pricingStructures<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-pricing-structure/index.html">PricingStructure</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serviceCategory<span class="token operator">: </span><a href="../-service-category/index.html">ServiceCategory</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serviceLocation<span class="token operator">: </span><a href="../-service-location/index.html">ServiceLocation</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serviceMultipliers<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-service-multiplier/index.html">ServiceMultiplier</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serviceSupplier<span class="token operator">: </span><a href="../-service-supplier/index.html">ServiceSupplier</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>aliasName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mRID<span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>names<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rf_OrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rf_CustomAttributes<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>diagramObjects<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-identified-object/index.html">IdentifiedObject</a></div><p class="paragraph">Точка поставки</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="53080764%2FConstructors%2F769193423" anchor-label="UsagePoint" id="53080764%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-usage-point.html"><span>Usage</span><wbr></wbr><span><span>Point</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53080764%2FConstructors%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nominalServiceVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">outageRegion<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">phaseCode<span class="token operator">: </span><a href="../-phase-code/index.html">PhaseCode</a><span class="token punctuation">, </span></span><span class="parameter ">servicePriority<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">customerAgreement<span class="token operator">: </span><a href="../-customer-agreement/index.html">CustomerAgreement</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">endDevices<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-end-device/index.html">EndDevice</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">equipments<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-equipment/index.html">Equipment</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">usagePointLocation<span class="token operator">: </span><a href="../-usage-point-location/index.html">UsagePointLocation</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">amiBillingReady<span class="token operator">: </span><a href="../-ami-billing-ready-kind/index.html">AmiBillingReadyKind</a><span class="token punctuation">, </span></span><span class="parameter ">checkBilling<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">connectionState<span class="token operator">: </span><a href="../-usage-point-connected-kind/index.html">UsagePointConnectedKind</a><span class="token punctuation">, </span></span><span class="parameter ">estimatedLoad<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a><span class="token punctuation">, </span></span><span class="parameter ">grounded<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">isSdp<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">isVirtual<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">minimalUsageExpected<span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span><span class="token punctuation">, </span></span><span class="parameter ">ratedCurrent<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a><span class="token punctuation">, </span></span><span class="parameter ">ratedPower<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-active-power/index.html">ActivePower</a><span class="token punctuation">, </span></span><span class="parameter ">readCycle<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">readRoute<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">serviceDeliveryRemark<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">configurationEvents<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-configuration-event/index.html">ConfigurationEvent</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">metrologyRequirements<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-metrology-requirement/index.html">MetrologyRequirement</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">pricingStructures<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-pricing-structure/index.html">PricingStructure</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">serviceCategory<span class="token operator">: </span><a href="../-service-category/index.html">ServiceCategory</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">serviceLocation<span class="token operator">: </span><a href="../-service-location/index.html">ServiceLocation</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">serviceMultipliers<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-service-multiplier/index.html">ServiceMultiplier</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">serviceSupplier<span class="token operator">: </span><a href="../-service-supplier/index.html">ServiceSupplier</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">aliasName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">mRID<span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">names<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_OrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_CustomAttributes<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">diagramObjects<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1118984403%2FProperties%2F769193423" anchor-label="aliasName" id="1118984403%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="alias-name.html"><span>alias</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1118984403%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="alias-name.html">aliasName</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Дополнительное наименование идентифицируемого объекта</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-666870263%2FProperties%2F769193423" anchor-label="amiBillingReady" id="-666870263%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ami-billing-ready.html"><span>ami</span><wbr></wbr><span>Billing</span><wbr></wbr><span><span>Ready</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-666870263%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ami-billing-ready.html">amiBillingReady</a><span class="token operator">: </span><a href="../-ami-billing-ready-kind/index.html">AmiBillingReadyKind</a></div><div class="brief "><p class="paragraph">Жизненный цикл системы считывания показаний в точке поставки в отношении готовности к выставлению счетов с помощью расширенной инфраструктуры считываний показаний</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1106788487%2FProperties%2F769193423" anchor-label="checkBilling" id="-1106788487%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-billing.html"><span>check</span><wbr></wbr><span><span>Billing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1106788487%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-billing.html">checkBilling</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">TRUE, если в результате проверки или иным образом есть основания подозревать, что предыдущий биллинг мог быть выполнен с ошибочными данными. Значение следует сбросить после устранения этого потенциального несоответствия</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1087746721%2FProperties%2F769193423" anchor-label="configurationEvents" id="-1087746721%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configuration-events.html"><span>configuration</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1087746721%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="configuration-events.html">configurationEvents</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-configuration-event/index.html">ConfigurationEvent</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">События конфигурирования точки поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-782929989%2FProperties%2F769193423" anchor-label="connectionState" id="-782929989%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connection-state.html"><span>connection</span><wbr></wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-782929989%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="connection-state.html">connectionState</a><span class="token operator">: </span><a href="../-usage-point-connected-kind/index.html">UsagePointConnectedKind</a></div><div class="brief "><p class="paragraph">Состояние точки поставки по отношению к подключению к сети</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="780969506%2FProperties%2F769193423" anchor-label="customerAgreement" id="780969506%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="customer-agreement.html"><span>customer</span><wbr></wbr><span><span>Agreement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="780969506%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="customer-agreement.html">customerAgreement</a><span class="token operator">: </span><a href="../-customer-agreement/index.html">CustomerAgreement</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Договор с потребителем, регулирующий данную точку поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1559413582%2FProperties%2F769193423" anchor-label="description" id="-1559413582%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1559413582%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="description.html">description</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Описание объекта информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1515439349%2FProperties%2F769193423" anchor-label="diagramObjects" id="-1515439349%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="diagram-objects.html"><span>diagram</span><wbr></wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1515439349%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="diagram-objects.html">diagramObjects</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Элементы схемы, связанные с объектом информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2088582890%2FProperties%2F769193423" anchor-label="endDevices" id="2088582890%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end-devices.html"><span>end</span><wbr></wbr><span><span>Devices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2088582890%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="end-devices.html">endDevices</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-end-device/index.html">EndDevice</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Оконечные устройства точки поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="764645159%2FProperties%2F769193423" anchor-label="equipments" id="764645159%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equipments.html"><span><span>equipments</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="764645159%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="equipments.html">equipments</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-equipment/index.html">Equipment</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Оборудование, к которому относится точка учета</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-54491156%2FProperties%2F769193423" anchor-label="estimatedLoad" id="-54491156%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="estimated-load.html"><span>estimated</span><wbr></wbr><span><span>Load</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-54491156%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="estimated-load.html">estimatedLoad</a><span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a></div><div class="brief "><p class="paragraph">Плановый график, Вт</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-486402490%2FProperties%2F769193423" anchor-label="grounded" id="-486402490%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="grounded.html"><span><span>grounded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-486402490%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="grounded.html">grounded</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">TRUE, если заземлено</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1563036889%2FProperties%2F769193423" anchor-label="isSdp" id="1563036889%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sdp.html"><span>is</span><wbr></wbr><span><span>Sdp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1563036889%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-sdp.html">isSdp</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Если TRUE, то точка поставки является точкой предоставления услуг, то есть точкой поставки, где право собственности на услугу переходит из рук в руки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1995469325%2FProperties%2F769193423" anchor-label="isVirtual" id="1995469325%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-virtual.html"><span>is</span><wbr></wbr><span><span>Virtual</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1995469325%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-virtual.html">isVirtual</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Если TRUE, то точка поставки является виртуальной, то есть в сети не существует физического местоположения, где можно было бы разместить прибор учета для сбора показаний</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-495938640%2FProperties%2F769193423" anchor-label="metrologyRequirements" id="-495938640%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="metrology-requirements.html"><span>metrology</span><wbr></wbr><span><span>Requirements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-495938640%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="metrology-requirements.html">metrologyRequirements</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-metrology-requirement/index.html">MetrologyRequirement</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Метрологические требования для точки поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="721270036%2FProperties%2F769193423" anchor-label="minimalUsageExpected" id="721270036%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minimal-usage-expected.html"><span>minimal</span><wbr></wbr><span>Usage</span><wbr></wbr><span><span>Expected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="721270036%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="minimal-usage-expected.html">minimalUsageExpected</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Если TRUE, то минимальное или нулевое использование ожидается в точке поставки для таких ситуаций, как логическое или физическое отключение</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="18647564%2FProperties%2F769193423" anchor-label="mRID" id="18647564%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="m-r-i-d.html"><span>m</span><wbr></wbr><span><span>RID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="18647564%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="m-r-i-d.html">mRID</a><span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span></div><div class="brief "><p class="paragraph">Глобальный уникальный идентификатор объекта информационной модели. Тип представляет собой 16-байтный (128-битный) номер в шестнадцатеричной системе счисления, как определено в ГОСТ Р ИСО/МЭК 9834-8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1827279039%2FProperties%2F769193423" anchor-label="name" id="-1827279039%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827279039%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Наименование объекта информационной модели. Если объект модели имеет диспетчерское наименование, то указывается диспетчерское наименование</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="755179430%2FProperties%2F769193423" anchor-label="names" id="755179430%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="names.html"><span><span>names</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="755179430%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="names.html">names</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор типизированных наименований</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1471888215%2FProperties%2F769193423" anchor-label="nominalServiceVoltage" id="-1471888215%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="nominal-service-voltage.html"><span>nominal</span><wbr></wbr><span>Service</span><wbr></wbr><span><span>Voltage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1471888215%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="nominal-service-voltage.html">nominalServiceVoltage</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Номинальное рабочее напряжение, В</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1457075911%2FProperties%2F769193423" anchor-label="outageRegion" id="1457075911%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="outage-region.html"><span>outage</span><wbr></wbr><span><span>Region</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1457075911%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="outage-region.html">outageRegion</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Область отключения подачи электроэнергии, в которой расположена данная точка поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1858115686%2FProperties%2F769193423" anchor-label="phaseCode" id="1858115686%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="phase-code.html"><span>phase</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1858115686%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="phase-code.html">phaseCode</a><span class="token operator">: </span><a href="../-phase-code/index.html">PhaseCode</a></div><div class="brief "><p class="paragraph">Код фазы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-160734872%2FProperties%2F769193423" anchor-label="pricingStructures" id="-160734872%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pricing-structures.html"><span>pricing</span><wbr></wbr><span><span>Structures</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-160734872%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pricing-structures.html">pricingStructures</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-pricing-structure/index.html">PricingStructure</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Ценовые структуры, применимые к точке поставки (с прибором учета предоплаты, работающим как автономное устройство, без CustomerAgreement или клиента)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1694934857%2FProperties%2F769193423" anchor-label="ratedCurrent" id="-1694934857%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rated-current.html"><span>rated</span><wbr></wbr><span><span>Current</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1694934857%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="rated-current.html">ratedCurrent</a><span class="token operator">: </span><a href="../../ru.vniizht.model.result/-current-flow/index.html">CurrentFlow</a></div><div class="brief "><p class="paragraph">Направление тока, на которое настроена точка поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1637459093%2FProperties%2F769193423" anchor-label="ratedPower" id="-1637459093%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rated-power.html"><span>rated</span><wbr></wbr><span><span>Power</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637459093%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="rated-power.html">ratedPower</a><span class="token operator">: </span><a href="../../ru.vniizht.model.result/-active-power/index.html">ActivePower</a></div><div class="brief "><p class="paragraph">Максимальная мощность в точке поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1451017854%2FProperties%2F769193423" anchor-label="readCycle" id="1451017854%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-cycle.html"><span>read</span><wbr></wbr><span><span>Cycle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1451017854%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="read-cycle.html">readCycle</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">День цикла, как правило, в который считывается прибор учета в точке поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2092364411%2FProperties%2F769193423" anchor-label="readRoute" id="2092364411%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-route.html"><span>read</span><wbr></wbr><span><span>Route</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2092364411%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="read-route.html">readRoute</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Идентификатор маршрута, которому назначена точка поставки для целей считывания показаний прибора учета</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1166877979%2FProperties%2F769193423" anchor-label="rf_CustomAttributes" id="1166877979%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rf_-custom-attributes.html"><span>rf_Custom</span><wbr></wbr><span><span>Attributes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1166877979%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="rf_-custom-attributes.html">rf_CustomAttributes</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор специализированных атрибутов</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="716864468%2FProperties%2F769193423" anchor-label="rf_OrganisationRoles" id="716864468%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rf_-organisation-roles.html"><span>rf_Organisation</span><wbr></wbr><span><span>Roles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="716864468%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="rf_-organisation-roles.html">rf_OrganisationRoles</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Роли организаций по отношению к объекту информационной модели. Ассоциация является расширением стандартной модели и используется на практике для указания ролей организаций в отношении к объектам информационной модели различного типа, а не только для моделей материальных объектов. Применяется в случаях, когда включение моделей материальных объектов в информационный обмен нецелесообразно либо они отсутствуют</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-176435909%2FProperties%2F769193423" anchor-label="serviceCategory" id="-176435909%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-category.html"><span>service</span><wbr></wbr><span><span>Category</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-176435909%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-category.html">serviceCategory</a><span class="token operator">: </span><a href="../-service-category/index.html">ServiceCategory</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Категория услуг, предоставляемая точкой поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-778003099%2FProperties%2F769193423" anchor-label="serviceDeliveryRemark" id="-778003099%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-delivery-remark.html"><span>service</span><wbr></wbr><span>Delivery</span><wbr></wbr><span><span>Remark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-778003099%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-delivery-remark.html">serviceDeliveryRemark</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Замечания о точке поставки, например: причина, по которой ей присвоен неноминальный приоритет</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="577476196%2FProperties%2F769193423" anchor-label="serviceLocation" id="577476196%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-location.html"><span>service</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="577476196%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-location.html">serviceLocation</a><span class="token operator">: </span><a href="../-service-location/index.html">ServiceLocation</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Объект энергоснабжения, обслуживаемый точкой поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2113019153%2FProperties%2F769193423" anchor-label="serviceMultipliers" id="-2113019153%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-multipliers.html"><span>service</span><wbr></wbr><span><span>Multipliers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2113019153%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-multipliers.html">serviceMultipliers</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-service-multiplier/index.html">ServiceMultiplier</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Коэффициенты точки поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="428701525%2FProperties%2F769193423" anchor-label="servicePriority" id="428701525%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-priority.html"><span>service</span><wbr></wbr><span><span>Priority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="428701525%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-priority.html">servicePriority</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Приоритетное обслуживание данной точки поставки</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1579086893%2FProperties%2F769193423" anchor-label="serviceSupplier" id="1579086893%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="service-supplier.html"><span>service</span><wbr></wbr><span><span>Supplier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1579086893%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="service-supplier.html">serviceSupplier</a><span class="token operator">: </span><a href="../-service-supplier/index.html">ServiceSupplier</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Поставщик услуг, использующий точку поставки для предоставления услуг</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1094110104%2FProperties%2F769193423" anchor-label="usagePointLocation" id="-1094110104%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="usage-point-location.html"><span>usage</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1094110104%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="usage-point-location.html">usagePointLocation</a><span class="token operator">: </span><a href="../-usage-point-location/index.html">UsagePointLocation</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Расположение точки учета</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

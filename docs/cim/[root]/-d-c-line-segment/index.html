@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DCLineSegment</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            cim
+                    </a>
+            </div>
+            <div class="library-version">
+1.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="cim::/DCLineSegment///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">cim</a><span class="delimiter">/</span><a href="../index.html">[root]</a><span class="delimiter">/</span><span class="current">DCLineSegment</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>DCLine</span><wbr></wbr><span><span>Segment</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">DCLineSegment</a> : <a href="../-d-c-conducting-equipment/index.html">DCConductingEquipment</a></div><p class="paragraph">Участок линии постоянного тока</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-792833549%2FProperties%2F769193423" anchor-label="additionalEquipmentContainer" id="-792833549%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/additional-equipment-container.html"><span>additional</span><wbr></wbr><span>Equipment</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-792833549%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/additional-equipment-container.html">additionalEquipmentContainer</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-equipment-container/index.html">EquipmentContainer</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Дополнительная ассоциация оборудования с другим контейнером. Например, выключатель и другое оборудование в ячейке могут быть ассоциированы с ЛЭП либо участок ЛЭП может быть ассоциирован с ячейками подстанций (подстанциями)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="592090344%2FProperties%2F769193423" anchor-label="aliasName" id="592090344%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/alias-name.html"><span>alias</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="592090344%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/alias-name.html">aliasName</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Дополнительное наименование идентифицируемого объекта</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1137359492%2FProperties%2F769193423" anchor-label="assetDatasheet" id="-1137359492%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/asset-datasheet.html"><span>asset</span><wbr></wbr><span><span>Datasheet</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1137359492%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/asset-datasheet.html">assetDatasheet</a><span class="token operator">: </span><a href="../-asset-info/index.html">AssetInfo</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Информация о материальном объекте для соответствующего объекта, потомка обобщенного объекта энергосистемы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1319931550%2FProperties%2F769193423" anchor-label="assets" id="1319931550%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/assets.html"><span><span>assets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1319931550%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/assets.html">assets</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Материальные объекты, ассоциированные с объектом энергосистемы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1037854067%2FProperties%2F769193423" anchor-label="capacitance" id="-1037854067%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="capacitance.html"><span><span>capacitance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1037854067%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="capacitance.html">capacitance</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Емкость участка линии постоянного тока, Ф</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-695371317%2FProperties%2F769193423" anchor-label="controls" id="-695371317%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/controls.html"><span><span>controls</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-695371317%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/controls.html">controls</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-control/index.html">Control</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Управляющие воздействия, применяемые для управления данным регулирующим устройством</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1668676206%2FProperties%2F769193423" anchor-label="dCTerminals" id="-1668676206%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-d-c-conducting-equipment/d-c-terminals.html"><span>d</span><wbr></wbr><span><span>CTerminals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1668676206%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-d-c-conducting-equipment/d-c-terminals.html">dCTerminals</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-d-c-terminal/index.html">DCTerminal</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Полюса электропроводящего оборудования постоянного тока</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1098463353%2FProperties%2F769193423" anchor-label="description" id="-1098463353%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098463353%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/description.html">description</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Описание объекта информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-357612522%2FProperties%2F769193423" anchor-label="diagramObjects" id="-357612522%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/diagram-objects.html"><span>diagram</span><wbr></wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-357612522%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/diagram-objects.html">diagramObjects</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Элементы схемы, связанные с объектом информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-725292902%2FProperties%2F769193423" anchor-label="equipmentContainer" id="-725292902%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/equipment-container.html"><span>equipment</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-725292902%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/equipment-container.html">equipmentContainer</a><span class="token operator">: </span><a href="../-equipment-container/index.html">EquipmentContainer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">(агрегирование) Контейнер оборудования, к которому относится единица оборудования</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1266928036%2FProperties%2F769193423" anchor-label="faults" id="-1266928036%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/faults.html"><span><span>faults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1266928036%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/faults.html">faults</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-fault/index.html">Fault</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Повреждения первичного оборудования</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1738110199%2FProperties%2F769193423" anchor-label="inductance" id="-1738110199%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inductance.html"><span><span>inductance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1738110199%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="inductance.html">inductance</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Индуктивность участка линии постоянного тока, Гн</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1294489511%2FProperties%2F769193423" anchor-label="length" id="-1294489511%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="length.html"><span><span>length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1294489511%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="length.html">length</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Длина участка линии, используемая для расчета характеристик участка линии, м</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1020614710%2FProperties%2F769193423" anchor-label="limitDependencyModel" id="-1020614710%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/limit-dependency-model.html"><span>limit</span><wbr></wbr><span>Dependency</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1020614710%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/limit-dependency-model.html">limitDependencyModel</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-limit-dependency/index.html">LimitDependency</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Зависимости эксплуатационных ограничений/пределов</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1598034516%2FProperties%2F769193423" anchor-label="location" id="-1598034516%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1598034516%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/location.html">location</a><span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Расположение объекта энергосистемы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="265094506%2FProperties%2F769193423" anchor-label="measurements" id="265094506%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/measurements.html"><span><span>measurements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="265094506%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/measurements.html">measurements</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-measurement/index.html">Measurement</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Параметры измерений, которые относятся к обобщенному объекту энергосистемы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-268806953%2FProperties%2F769193423" anchor-label="mRID" id="-268806953%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/m-r-i-d.html"><span>m</span><wbr></wbr><span><span>RID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-268806953%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/m-r-i-d.html">mRID</a><span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span></div><div class="brief "><p class="paragraph">Глобальный уникальный идентификатор объекта информационной модели. Тип представляет собой 16-байтный (128-битный) номер в шестнадцатеричной системе счисления, как определено в ГОСТ Р ИСО/МЭК 9834-8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2114733556%2FProperties%2F769193423" anchor-label="name" id="-2114733556%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2114733556%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/name.html">name</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Наименование объекта информационной модели. Если объект модели имеет диспетчерское наименование, то указывается диспетчерское наименование</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="434023995%2FProperties%2F769193423" anchor-label="names" id="434023995%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/names.html"><span><span>names</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="434023995%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/names.html">names</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор типизированных наименований</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1461397937%2FProperties%2F769193423" anchor-label="normallyInService" id="1461397937%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/normally-in-service.html"><span>normally</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1461397937%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/normally-in-service.html">normallyInService</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Присвоенное значение &quot;Истина&quot; признак того, что оборудование находится в работе</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2052584244%2FProperties%2F769193423" anchor-label="operationalLimitSet" id="2052584244%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/operational-limit-set.html"><span>operational</span><wbr></wbr><span>Limit</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2052584244%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/operational-limit-set.html">operationalLimitSet</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-operational-limit-set/index.html">OperationalLimitSet</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор эксплуатационных ограничений/пределов оборудования</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2145396661%2FProperties%2F769193423" anchor-label="outages" id="-2145396661%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/outages.html"><span><span>outages</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2145396661%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/outages.html">outages</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-outage/index.html">Outage</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Аварийное событие, связанное с оборудованием</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1537883312%2FProperties%2F769193423" anchor-label="pSRType" id="1537883312%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-power-system-resource/p-s-r-type.html"><span>p</span><wbr></wbr><span><span>SRType</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1537883312%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-power-system-resource/p-s-r-type.html">pSRType</a><span class="token operator">: </span><a href="../-p-s-r-type/index.html">PSRType</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Дополнительный классификатор</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1540681062%2FProperties%2F769193423" anchor-label="resistance" id="1540681062%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resistance.html"><span><span>resistance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1540681062%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="resistance.html">resistance</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Сопротивление участка линии постоянного тока, Ом</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="416090864%2FProperties%2F769193423" anchor-label="rf_CustomAttributes" id="416090864%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/rf_-custom-attributes.html"><span>rf_Custom</span><wbr></wbr><span><span>Attributes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="416090864%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/rf_-custom-attributes.html">rf_CustomAttributes</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор специализированных атрибутов</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1082699617%2FProperties%2F769193423" anchor-label="rf_OrganisationRoles" id="-1082699617%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-identified-object/rf_-organisation-roles.html"><span>rf_Organisation</span><wbr></wbr><span><span>Roles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1082699617%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-identified-object/rf_-organisation-roles.html">rf_OrganisationRoles</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Роли организаций по отношению к объекту информационной модели. Ассоциация является расширением стандартной модели и используется на практике для указания ролей организаций в отношении к объектам информационной модели различного типа, а не только для моделей материальных объектов. Применяется в случаях, когда включение моделей материальных объектов в информационный обмен нецелесообразно либо они отсутствуют</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-486441510%2FProperties%2F769193423" anchor-label="rf_VoltageLimitDurationCurve" id="-486441510%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/rf_-voltage-limit-duration-curve.html"><span>rf_Voltage</span><wbr></wbr><span>Limit</span><wbr></wbr><span>Duration</span><wbr></wbr><span><span>Curve</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-486441510%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/rf_-voltage-limit-duration-curve.html">rf_VoltageLimitDurationCurve</a><span class="token operator">: </span><a href="../rf_-voltage-limit-duration-curve/index.html">rf_VoltageLimitDurationCurve</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Допустимая длительность значения напряжения в зависимости от его диапазона</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-990264247%2FProperties%2F769193423" anchor-label="usagePoints" id="-990264247%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-equipment/usage-points.html"><span>usage</span><wbr></wbr><span><span>Points</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-990264247%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="../-equipment/usage-points.html">usagePoints</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-usage-point/index.html">UsagePoint</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Точки учета, относящиеся к данному оборудованию</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

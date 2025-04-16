@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>rf_ShuntReactorInfo</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            cim
+                    </a>
+            </div>
+            <div class="library-version">
+1.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="cim::/rf_ShuntReactorInfo///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">cim</a><span class="delimiter">/</span><a href="../index.html">[root]</a><span class="delimiter">/</span><span class="current">rf_ShuntReactorInfo</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>rf_Shunt</span><wbr></wbr><span>Reactor</span><wbr></wbr><span><span>Info</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">rf_ShuntReactorInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>groundResistorEnergy<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>neutralResistance<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>neutralResistanceTime<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedNeutralVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedNeutralInsulationVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loss<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maxPowerLoss<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedReactivePower<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedCurrent<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ratedVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>productAssetModel<span class="token operator">: </span><a href="../-product-asset-model/index.html">ProductAssetModel</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>assets<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>powerSystemResources<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-power-system-resource/index.html">PowerSystemResource</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>aliasName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>mRID<span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>names<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rf_OrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>rf_CustomAttributes<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>diagramObjects<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../-shunt-compensator-info/index.html">ShuntCompensatorInfo</a></div><p class="paragraph">Технические параметры шунтирующих реакторов</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../rf_-controlled-shunt-reactor-info/index.html">rf_ControlledShuntReactorInfo</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-678959028%2FConstructors%2F769193423" anchor-label="rf_ShuntReactorInfo" id="-678959028%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rf_-shunt-reactor-info.html"><span>rf_Shunt</span><wbr></wbr><span>Reactor</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-678959028%2FConstructors%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groundResistorEnergy<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">neutralResistance<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">neutralResistanceTime<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">ratedNeutralVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">ratedNeutralInsulationVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">loss<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">maxPowerLoss<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">ratedReactivePower<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">ratedCurrent<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">ratedVoltage<span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span><span class="token punctuation">, </span></span><span class="parameter ">productAssetModel<span class="token operator">: </span><a href="../-product-asset-model/index.html">ProductAssetModel</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">assets<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">powerSystemResources<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-power-system-resource/index.html">PowerSystemResource</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">aliasName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">mRID<span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">names<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_OrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_CustomAttributes<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">diagramObjects<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="992829321%2FProperties%2F769193423" anchor-label="aliasName" id="992829321%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/alias-name.html"><span>alias</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="992829321%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/alias-name.html">aliasName</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Дополнительное наименование идентифицируемого объекта</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="114406035%2FProperties%2F769193423" anchor-label="assets" id="114406035%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/assets.html"><span><span>assets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="114406035%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/assets.html">assets</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Материальные объекты, к которым относится техническая информация</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1759604200%2FProperties%2F769193423" anchor-label="description" id="1759604200%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1759604200%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/description.html">description</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Описание объекта информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="901182997%2FProperties%2F769193423" anchor-label="diagramObjects" id="901182997%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/diagram-objects.html"><span>diagram</span><wbr></wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="901182997%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/diagram-objects.html">diagramObjects</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Элементы схемы, связанные с объектом информационной модели</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-703011176%2FProperties%2F769193423" anchor-label="groundResistorEnergy" id="-703011176%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ground-resistor-energy.html"><span>ground</span><wbr></wbr><span>Resistor</span><wbr></wbr><span><span>Energy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-703011176%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="ground-resistor-energy.html">groundResistorEnergy</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Энергоемкость резистора в нейтральном выводе (Только для ШР с резисторами в нейтральных выводах), Дж</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1225432371%2FProperties%2F769193423" anchor-label="loss" id="1225432371%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/loss.html"><span><span>loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1225432371%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shunt-compensator-info/loss.html">loss</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Потери активной мощности ШР при номинальном напряжении, кВт</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-340001358%2FProperties%2F769193423" anchor-label="maxPowerLoss" id="-340001358%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/max-power-loss.html"><span>max</span><wbr></wbr><span>Power</span><wbr></wbr><span><span>Loss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-340001358%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shunt-compensator-info/max-power-loss.html">maxPowerLoss</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Максимальные потери полной мощности, МВА</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1819912598%2FProperties%2F769193423" anchor-label="mRID" id="1819912598%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/m-r-i-d.html"><span>m</span><wbr></wbr><span><span>RID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1819912598%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/m-r-i-d.html">mRID</a><span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span></div><div class="brief "><p class="paragraph">Глобальный уникальный идентификатор объекта информационной модели. Тип представляет собой 16-байтный (128-битный) номер в шестнадцатеричной системе счисления, как определено в ГОСТ Р ИСО/МЭК 9834-8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26014005%2FProperties%2F769193423" anchor-label="name" id="-26014005%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26014005%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/name.html">name</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Наименование объекта информационной модели. Если объект модели имеет диспетчерское наименование, то указывается диспетчерское наименование</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="759820636%2FProperties%2F769193423" anchor-label="names" id="759820636%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/names.html"><span><span>names</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="759820636%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/names.html">names</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор типизированных наименований</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1302328518%2FProperties%2F769193423" anchor-label="neutralResistance" id="1302328518%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="neutral-resistance.html"><span>neutral</span><wbr></wbr><span><span>Resistance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1302328518%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="neutral-resistance.html">neutralResistance</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Сопротивление резистора в нейтральном выводе (Только для ШР с резисторами в нейтральных выводах), Ом</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="365114873%2FProperties%2F769193423" anchor-label="neutralResistanceTime" id="365114873%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="neutral-resistance-time.html"><span>neutral</span><wbr></wbr><span>Resistance</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="365114873%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="neutral-resistance-time.html">neutralResistanceTime</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Длительность нахождения резистора в нейтральном выводе в цепи (Только для ШР с резисторами в нейтральных выводах), с</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1963294427%2FProperties%2F769193423" anchor-label="powerSystemResources" id="-1963294427%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/power-system-resources.html"><span>power</span><wbr></wbr><span>System</span><wbr></wbr><span><span>Resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1963294427%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/power-system-resources.html">powerSystemResources</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-power-system-resource/index.html">PowerSystemResource</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Техническая информация об обобщенном объекте энергосистемы</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1427745212%2FProperties%2F769193423" anchor-label="productAssetModel" id="1427745212%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/product-asset-model.html"><span>product</span><wbr></wbr><span>Asset</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1427745212%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/product-asset-model.html">productAssetModel</a><span class="token operator">: </span><a href="../-product-asset-model/index.html">ProductAssetModel</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Модель оборудования, к которой относится описание</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1884598719%2FProperties%2F769193423" anchor-label="ratedCurrent" id="-1884598719%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/rated-current.html"><span>rated</span><wbr></wbr><span><span>Current</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1884598719%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shunt-compensator-info/rated-current.html">ratedCurrent</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Номинальный ток, А</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="538141755%2FProperties%2F769193423" anchor-label="ratedNeutralInsulationVoltage" id="538141755%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rated-neutral-insulation-voltage.html"><span>rated</span><wbr></wbr><span>Neutral</span><wbr></wbr><span>Insulation</span><wbr></wbr><span><span>Voltage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="538141755%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="rated-neutral-insulation-voltage.html">ratedNeutralInsulationVoltage</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Допустимое напряжение изоляции нулевых выводов, кВ</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="147137547%2FProperties%2F769193423" anchor-label="ratedNeutralVoltage" id="147137547%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rated-neutral-voltage.html"><span>rated</span><wbr></wbr><span>Neutral</span><wbr></wbr><span><span>Voltage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="147137547%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="rated-neutral-voltage.html">ratedNeutralVoltage</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Номинальное напряжение нулевых выводов, кВ</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2052221902%2FProperties%2F769193423" anchor-label="ratedReactivePower" id="2052221902%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/rated-reactive-power.html"><span>rated</span><wbr></wbr><span>Reactive</span><wbr></wbr><span><span>Power</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2052221902%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shunt-compensator-info/rated-reactive-power.html">ratedReactivePower</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Номинальная реактивная мощность, Мвар</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="203926524%2FProperties%2F769193423" anchor-label="ratedVoltage" id="203926524%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/rated-voltage.html"><span>rated</span><wbr></wbr><span><span>Voltage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="203926524%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-shunt-compensator-info/rated-voltage.html">ratedVoltage</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Double///PointingToDeclaration/">Double</span></div><div class="brief "><p class="paragraph">Номинальное напряжение, кВ</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1460650065%2FProperties%2F769193423" anchor-label="rf_CustomAttributes" id="1460650065%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/rf_-custom-attributes.html"><span>rf_Custom</span><wbr></wbr><span><span>Attributes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1460650065%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/rf_-custom-attributes.html">rf_CustomAttributes</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Набор специализированных атрибутов</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1233864542%2FProperties%2F769193423" anchor-label="rf_OrganisationRoles" id="1233864542%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-shunt-compensator-info/rf_-organisation-roles.html"><span>rf_Organisation</span><wbr></wbr><span><span>Roles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1233864542%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="../-shunt-compensator-info/rf_-organisation-roles.html">rf_OrganisationRoles</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Роли организаций по отношению к объекту информационной модели. Ассоциация является расширением стандартной модели и используется на практике для указания ролей организаций в отношении к объектам информационной модели различного типа, а не только для моделей материальных объектов. Применяется в случаях, когда включение моделей материальных объектов в информационный обмен нецелесообразно либо они отсутствуют</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

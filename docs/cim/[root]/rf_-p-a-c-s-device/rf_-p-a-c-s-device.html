@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>rf_PACSDevice</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            cim
+                    </a>
+            </div>
+            <div class="library-version">
+1.0-SNAPSHOT            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="cim::/rf_PACSDevice/rf_PACSDevice/#kotlin.String#rf_PACSDeviceKind#rf_ElementBaseKind#kotlin.Array[rf_PACSDeviceSpecification]#kotlin.Array[rf_PACSDeviceOperationEvent]#kotlin.Array[Asset]#kotlin.Array[Seal]#kotlin.Array[PowerSystemResource]#AssetContainer?#Location?#InUseDate#InUseStateKind#LifecycleDate#kotlin.String#kotlin.String#AssetInfo?#AssetDeployment?#kotlin.Array[AssetOrganisationRole]#ProductAssetModel?#kotlin.String#ru.vniizht.model.result.PerCent#ElectronicAddress#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.Array[ActivityRecord]#kotlin.Array[ConfigurationEvent]#kotlin.Array[rf_ProtectionEquipmentData]#kotlin.String#kotlin.String#java.util.UUID#kotlin.String#kotlin.Array[Name]#kotlin.Array[OrganisationRole]#kotlin.Array[ru.vniizht.model.result.UserAttribute]#kotlin.Array[DiagramObject]/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">cim</a><span class="delimiter">/</span><a href="../index.html">[root]</a><span class="delimiter">/</span><a href="index.html">rf_PACSDevice</a><span class="delimiter">/</span><span class="current">rf_PACSDevice</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>rf_PACSDevice</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rf_firmwareID<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">rf_kind<span class="token operator">: </span><a href="../rf_-p-a-c-s-device-kind/index.html">rf_PACSDeviceKind</a><span class="token punctuation">, </span></span><span class="parameter ">rf_elementBaseKind<span class="token operator">: </span><a href="../rf_-element-base-kind/index.html">rf_ElementBaseKind</a><span class="token punctuation">, </span></span><span class="parameter ">pACSDeviceSpecifications<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../rf_-p-a-c-s-device-specification/index.html">rf_PACSDeviceSpecification</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_OperationEvents<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../rf_-p-a-c-s-device-operation-event/index.html">rf_PACSDeviceOperationEvent</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">assets<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset/index.html">Asset</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">seals<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-seal/index.html">Seal</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">powerSystemResources<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-power-system-resource/index.html">PowerSystemResource</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">assetContainer<span class="token operator">: </span><a href="../-asset-container/index.html">AssetContainer</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">location<span class="token operator">: </span><a href="../-location/index.html">Location</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">inUseDate<span class="token operator">: </span><a href="../-in-use-date/index.html">InUseDate</a><span class="token punctuation">, </span></span><span class="parameter ">inUseState<span class="token operator">: </span><a href="../-in-use-state-kind/index.html">InUseStateKind</a><span class="token punctuation">, </span></span><span class="parameter ">lifecycleDate<span class="token operator">: </span><a href="../-lifecycle-date/index.html">LifecycleDate</a><span class="token punctuation">, </span></span><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">type<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">assetInfo<span class="token operator">: </span><a href="../-asset-info/index.html">AssetInfo</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">assetDeployment<span class="token operator">: </span><a href="../-asset-deployment/index.html">AssetDeployment</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">assetOrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-asset-organisation-role/index.html">AssetOrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">productAssetModel<span class="token operator">: </span><a href="../-product-asset-model/index.html">ProductAssetModel</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">baselineCondition<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">baselineLossOfLife<span class="token operator">: </span><a href="../../ru.vniizht.model.result/-per-cent/index.html">PerCent</a><span class="token punctuation">, </span></span><span class="parameter ">electronicAddress<span class="token operator">: </span><a href="../-electronic-address/index.html">ElectronicAddress</a><span class="token punctuation">, </span></span><span class="parameter ">lotNumber<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">serialNumber<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">status<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">utcNumber<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">activityRecords<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-activity-record/index.html">ActivityRecord</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">configurationEvents<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-configuration-event/index.html">ConfigurationEvent</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">pEData<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../rf_-protection-equipment-data/index.html">rf_ProtectionEquipmentData</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">aliasName<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">mRID<span class="token operator">: </span><span data-unresolved-link="java.util/UUID///PointingToDeclaration/">UUID</span><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span><span class="token punctuation">, </span></span><span class="parameter ">names<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-name/index.html">Name</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_OrganisationRoles<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-organisation-role/index.html">OrganisationRole</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">rf_CustomAttributes<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../ru.vniizht.model.result/-user-attribute/index.html">UserAttribute</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">diagramObjects<span class="token operator">: </span><span data-unresolved-link="kotlin/Array///PointingToDeclaration/">Array</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-diagram-object/index.html">DiagramObject</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
